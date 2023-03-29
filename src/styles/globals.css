@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary{
+  @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all;
+
+}
+
+.li-header{
+  @apply px-[0.313rem] py-[1.25rem] uppercase hover:text-primary cursor-pointer;
+}
+
+.slick-dots {
+  @apply !flex justify-start w-full;
+}
+
+.slick-dots .slick-active div {
+  @apply bg-primary;
+}
+
+.slick-dots div {
+  @apply !m-0 !mt-8;
+}
+
