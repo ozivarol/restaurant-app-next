@@ -13,11 +13,7 @@ const Carousel = ({ ...fonts }) => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 10000,
-    appenDots: (dots) => (
-      <div>
-        <ul>{dots}</ul>
-      </div>
-    ),
+    appenDots:true,
     customPaging: (i) => (
       <div className="w-3 h-3 border bg-white rounded-full mt-10"></div>
     ),

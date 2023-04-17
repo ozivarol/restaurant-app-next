@@ -3,7 +3,7 @@ import Input from "../form/Input";
 import Title from "./Title";
 const { dancingClass, josefinSansClass } = require("../../assets/font");
 import { useFormik } from "formik";
-import { reservationSchema } from "@/schema/reservation";
+import { reservationSchema } from "@/schema/schemas";
 const Reservation = () => {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));

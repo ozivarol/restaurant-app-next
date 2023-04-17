@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {MdShoppingCart} from "react-icons/md"
 import Title from "./Title";
-const {josefinSansClass} = require("../../assets/font")
 const CampaignsItem = () => {
   return (
     <div className="bg-secondary flex-1 rounded-md py-5 px-[1rem] flex items-center gap-x-4">
@@ -14,12 +13,12 @@ const CampaignsItem = () => {
         />
       </div>
       <div className="text-white">
-        <Title addClass={`${josefinSansClass} text-2xl`}>Tasty Thursdays</Title>
+        <Title addClass={`text-2xl`}>Tasty Thursdays</Title>
         <div className="font-dancing my-1">
-          <span className={`${josefinSansClass} text-6xl`}>20%</span>
-          <span className={`${josefinSansClass} text-sm inline-block ml-1`}>Off</span>
+          <span className={`text-6xl`}>20%</span>
+          <span className={`text-sm inline-block ml-1`}>Off</span>
         </div>
-        <button className={`${josefinSansClass} btn-primary flex items-center gap-x-2`}>
+        <button className={`btn-primary flex items-center gap-x-2`}>
           Order Now <MdShoppingCart size={20} />
         </button>
       </div>
