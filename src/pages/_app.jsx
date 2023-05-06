@@ -3,10 +3,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "@/styles/globals.css";
 import Layout from "@/Layout/Layout";
-export default function App({ Component, pageProps }) {
+
+import { Provider } from "react-redux";
+import store from "../redux/store";
+
+import { SessionProvider } from "next-auth/react";
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <SessionProvider session={session}>
+      <Provider store={store}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
+    </SessionProvider>
   );
 }
+
+export default MyApp;
