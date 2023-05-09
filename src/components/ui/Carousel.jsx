@@ -19,6 +19,7 @@ const Carousel = ({ ...fonts }) => {
     ),
   };
   let objectFonts = { ...fonts };
+  console.log(objectFonts)
 
   return (
     <div className="h-screen w-full container mx-auto -mt-[5.5rem]">
